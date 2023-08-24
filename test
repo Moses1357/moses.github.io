@@ -1,1 +1,9 @@
-
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Image Example</title>
+</head>
+<body>
+    <img src="test pic.png" alt="Your Image">
+</body>
+</html>
