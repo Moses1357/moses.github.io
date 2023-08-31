@@ -1,9 +1,73 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-    <title>Image Example</title>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-image: url('background-image.jpg');
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+        }
+        header {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+        .container {
+            max-width: 800px;
+            margin: 0 auto;
+            padding: 2rem;
+            background-color: rgba(255, 255, 255, 0.9);
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.3);
+        }
+        .profile-image {
+            max-width: 100%;
+            height: auto;
+            border-radius: 50%;
+            margin: 1rem 0;
+        }
+        video {
+            max-width: 100%;
+            height: auto;
+        }
+        footer {
+            background-color: rgba(0, 0, 0, 0.7);
+            color: white;
+            text-align: center;
+            padding: 1rem;
+        }
+    </style>
 </head>
 <body>
-    testing testing 123<img src="test pic.png" alt="Your Image">
+    <header>
+        <h1>Moses Nuguna</h1>
+        <p>Actor</p>
+    </header>
+    <div class="container" style="text-align: center;">
+        <img class="profile-image" src="profile-picture.png" alt="Profile Picture">
+        <h2>About Me</h2>
+        <p>The coolest dude from bavaria.</p>
+        
+        <h2>Demo Video</h2>
+        <video controls>
+            <source src="demo-video.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+        <h2>Contact</h2>
+        <p>Email: example@example.com</p>
+        <p>Phone: (123) 456-7890</p>
+    </div>
+    <footer>
+        <p>&copy; 2023 Portfolio. All rights reserved.</p>
+    </footer>
 </body>
 </html>
