@@ -1,0 +1,162 @@
+    /* nav bar */
+.navbar {
+    background-color: white;
+}
+
+.navbar .navbar-brand {
+  font-size: 30px;
+}
+.navbar .navbar-brand img{
+    height: 100px;;
+  }
+.navbar .nav-item {
+  padding: 10px 20px;
+}
+
+.navbar .nav-link {
+  color: black;
+  padding-left: 10px;
+  font-size: 20px;
+  margin-left: 10px;
+  box-shadow: inset 0 0 0 0 black;
+  -webkit-transition: ease-out 0.4s;
+  -moz-transition: ease-out 0.4s;
+  transition: ease-out 0.4s;
+}
+
+.navbar .nav-link:hover {
+    color: white;
+    box-shadow: inset 400px 0 0 0 black;
+}
+
+.fa-bars {
+  color: black;
+  font-size: 60px;
+}
+  /* nav bar end*/
+
+
+  /*photos section*/
+  .photos_section {
+    background-color: white;
+    padding: 50px;
+  }
+
+  .photos_section > .slide > .carousel-inner > .carousel-item > .carousel-caption > h5 {
+    color: white;
+  }
+
+  .photos_section > .slide > .carousel-inner > .carousel-item > .carousel-caption > p {
+    color: white;
+  }
+  /*photos section end*/
+
+  /*contacts (parallax)*/
+  /*
+* ==========================================
+* PARALLAX
+* ==========================================
+*/
+
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover; 
+}
+
+/*
+* ==========================================
+* TEXT OVERLAY
+* ==========================================
+*/
+
+/* This allows designers to put text in front of a picture */
+
+/* Image and text go inside this div */
+.overlay-content {
+  text-align: center;
+  position: relative;
+}
+
+/* Use this div to lighten an image and put dark text overlayed */
+.overlay-lighten_1 {
+  background-image: url('../images/font_image.png'); 
+  height: 900px;
+  width: 100%;
+  filter: brightness(50%);
+}
+
+.overlay-lighten_2 {
+  background-image: url('../images/sec_2.jpeg'); 
+  height: 900px;
+  width: 100%;
+  filter: brightness(50%);
+}
+
+
+/* Use this class in a div, h2, or p to center the overlayed text */
+.overlay-text {
+  width: 75%; 
+  min-width: 350px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.overlay-text > h3{
+  padding: 0 20px;
+  color: white;
+  font-size: 60pt;
+}
+
+.overlay-text > h3 > a{
+  color: white;
+  text-decoration: none;
+}
+  /*contacts end*/
+
+  /* location */
+  .location {
+    background-color: black;
+    padding: 0;
+    margin: 0;
+  }
+
+  .location > .container-fluid >.row >.col-sm-4 {
+    padding:100px; 
+    text-align: center;
+  }
+
+  .location > .container-fluid >.row >.col-sm-4 > h2 {
+    color: whitesmoke;
+  }
+
+  .location > .container-fluid >.row >.col-sm-4 > p {
+    color: white;
+  }
+
+  .location > .container-fluid >.row >.col-sm-8 {
+    padding:0px;
+  }
+  /* location end */
+
+  .show > video {
+    width: 100%;
+    height: 600px;
+    object-fit: cover;
+    margin-bottom: -5px;
+}
+
+.show1 > video {
+  width: 100%;
+  height: 700px;
+  margin-bottom: -5px;
+}
+
+  @media screen and (max-width: 600px) {
+    .overlay-text > h3{
+      font-size: 20pt;
+    }
+  }
